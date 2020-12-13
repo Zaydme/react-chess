@@ -32,7 +32,6 @@ function Board(props) {
       setLegalMoves([]);
       gameEngine.move(fromNotation, toNotation);
       dispatch(gameActions.move(fromNotation, toNotation));
-
       aiMove();
     } catch (e) {
       console.log(e.message);
